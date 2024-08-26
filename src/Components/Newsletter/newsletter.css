@@ -1,0 +1,19 @@
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+    background: #EFECF9;
+    border-radius: 0.9rem;
+    margin-top: 3rem;
+}
+
+.news-text {
+    margin-top: -2rem;
+}
+
+.news-btn {
+    margin-top: 2rem;
+}

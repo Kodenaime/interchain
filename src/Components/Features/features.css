@@ -5,6 +5,7 @@
 
 .left {
     justify-content: flex-start;
+    margin-right: 9rem;
 }
 
 .left h5 {
@@ -13,7 +14,8 @@
 }
 
 .left h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 i img {
@@ -22,6 +24,7 @@ i img {
 }
 
 .right {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;

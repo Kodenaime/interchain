@@ -4,6 +4,10 @@
     gap: 3rem;
 }
 
+.hero-image {
+    width: 100%;
+}
+
 .left {
     display: flex;
     flex-direction: column;
