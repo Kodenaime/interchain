@@ -2,9 +2,52 @@
 .footer {
     display: grid;
     grid-template-columns: 32% 24% 24% 20%;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
 }
 
 .first .logo {
     width: 7rem;
     height: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer p, .footer li a, .footer small, .footer .socials .soc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer h4 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer .form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer .form input {
+    background: var(--color-white);
+    border: 0.5px solid var(--color-black);
+    padding: 0.5rem;
+    /* width: 85%; */
+}
+
+.footer .form button {
+    padding: 0.5rem;
+    background: var(--color-primary);
+    border: 0.5px solid var(--color-primary);
+}
+
+.footer .socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .socials .soc {
+    padding-right: 0.6rem;
 }
