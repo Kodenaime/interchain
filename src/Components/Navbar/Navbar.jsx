@@ -2,20 +2,47 @@ import React from 'react'
 import './navbar.css'
 import logo from'../../Assets/logo.png'
 
+import { useState, useRef } from 'react'
+import { FaBarsStaggered } from "react-icons/fa6";
+import { FaRegWindowClose } from "react-icons/fa";
+
 const Navbar = () => {
+
+  const navRef = useRef();
+
+    const showNavbar = () => {
+         navRef.current.classList.toggle('responsive_nav');
+     }
+
+  const [activeNav, setActiveNav] = useState('#');      
+
+  const [isNavShow, setIsNavShow] = useState(false);
+
   return (
-    <div className="navbar">
-      <div className="logo">
-        <img src={logo} alt="" />
-      </div>
-      <ul className="nav-items">
-        <li><a href="">Features</a></li>
-        <li><a href="">How it Works</a></li>
-        <li><a href="">Supported Chains</a></li>
-        <li><a href="">Join Community</a></li>
-      </ul>
+    
+    <header>
+			<a href='/' className="logo">
+          <img src={logo}  alt="Logo for the website" /> 
+      </a>
+			<nav ref={navRef}>
+				<a href="#">Features</a>
+				<a href="#about">How it Works</a>
+				<a href="#featured">Supported Chains</a>
+				<a href="#products">Join Community</a>
+                
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaRegWindowClose />
+				</button>
+			</nav>
       <div className="btn">Launch Dapp</div>
-    </div>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBarsStaggered />
+			</button>
+	</header>
   )
 }
 

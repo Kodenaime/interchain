@@ -1,9 +1,10 @@
 import React from 'react'
 import './about.css'
 import note from '../../Assets/notebook.png'
-import small1 from '../../Assets/small1.png'
-import small2 from '../../Assets/small2.png'
-import small3 from '../../Assets/small3.png'
+
+import { FaClipboardList } from "react-icons/fa";
+import { GiChaingun } from "react-icons/gi";
+import { IoWalletOutline } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -18,25 +19,28 @@ const About = () => {
           <h5>How it Works</h5>
           <h2>How to use InterChain</h2>
           <article className="article">
-            <i className="about-icon"><img src={small1} alt="" /></i>
+
+              <i><IoWalletOutline /></i>
+              <p>Connect Wallet - Begin by connecting your preferred Web3 wallet,
+                 such as MetaMask or Trust Wallet, to our platform.</p>
+            
+          </article>
+          <article className="article">
+
+              <i><GiChaingun /></i>
+              <p>Select Chains - Choose the
+                 blockchain networks involved in your transaction.</p>
+            
+          </article>
+          <article className="article">
+
+              <i><FaClipboardList /></i>
+              <p>Confirm Transfer - Review the transaction details,
+                 including token amounts, fees, and destination addresses.
+                 <span>Once confirmed, our secure cross-chain bridge initiates the transfer,
+                 ensuring your assets move swiftly and securely.</span>
+              </p>
               
-              <p>Connect Wallet - Begin by connecting your preferred Web3 wallet,
-                 such as MetaMask or Trust Wallet, to our platform.</p>
-            
-          </article>
-          <article className="article">
-            <i className="about-icon">
-              <img src={small2} alt="" /></i>
-              <p>Connect Wallet - Begin by connecting your preferred Web3 wallet,
-                 such as MetaMask or Trust Wallet, to our platform.</p>
-            
-          </article>
-          <article className="article">
-            <i className="about-icon">
-              <img src={small3} alt="" />  </i>
-              <p>Connect Wallet - Begin by connecting your preferred Web3 wallet,
-                 such as MetaMask or Trust Wallet, to our platform.</p>
-          
           </article>
         </div>
 

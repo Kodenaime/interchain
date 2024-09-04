@@ -1,5 +1,6 @@
 .sup-icons {
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
     justify-content: center;
     align-items: center;
