@@ -53,16 +53,16 @@ const Footer = () => {
       <div className="socials">
         <h4>Socials</h4>
         <div className="soc">
-        <FaDiscord /> <span>Discord</span> 
+        <FaDiscord className='foot'/> <span>Discord</span> 
         </div>
         <div className="soc">
-        <FaTelegram /> <span>Telegram</span>
+        <FaTelegram className='foot'/> <span>Telegram</span>
         </div>
         <div className="soc">
-        <FaXTwitter /> <span>X</span> 
+        <FaXTwitter className='foot'/> <span>X</span> 
         </div>
         <div className="soc">
-        <FaLinkedin /><span>Linkedin</span>
+        <FaLinkedin className='foot'/><span>Linkedin</span>
         </div>
 
       </div>

@@ -6,14 +6,12 @@
 
 
 header {
-	/* position: fixed; */
 	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	/* background-color: var(--mainColor); */
 	color: var(--first-color);
 	z-index: 1;
   	border-bottom: 1px solid rgba(0, 0, 0, 0.2);	
@@ -66,7 +64,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--container-color);
+		background-color:  #EFECF9;
 		transition: 1s;
 	}
 
@@ -85,5 +83,9 @@ nav {
 	nav a {
 		font-size: 1.5rem;
 	}
+
+    .na-b {
+        display: none;
+    }
 }
 

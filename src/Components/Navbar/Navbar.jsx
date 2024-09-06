@@ -36,7 +36,7 @@ const Navbar = () => {
 					<FaRegWindowClose />
 				</button>
 			</nav>
-      <div className="btn">Launch Dapp</div>
+      <div className="btn na-b">Launch Dapp</div>
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>

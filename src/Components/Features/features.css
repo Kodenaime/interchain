@@ -57,6 +57,20 @@ i img {
     section {
         margin-top: 6rem;
     }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .right {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    
+    
 } 
 
 
